@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "wingz-django-assessment"
+version = "0.1.0"
+description = ""
+authors = ["Arnel Alvaran <absalvaran@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = "^3.13"
+django = "^5.2"
+django-rest-framework = "^0.1.0"
+django-rest-knox = "^5.0.2"
+pylint = "^3.3.6"
+black = "^25.1.0"
+pytest = "^8.3.5"
+dotenv = "^0.9.9"
+commitizen = "^4.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
