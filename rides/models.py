@@ -6,9 +6,9 @@ User = get_user_model()
 
 class Ride(models.Model):
     STATUS_CHOICES = (
-        ("ENROUTE", "en-route"),
-        ("PICKUP", "pickup"),
-        ("DROPOFF", "dropoff"),
+        ("enroute", "en-route"),
+        ("pickup", "pickup"),
+        ("dropoff", "dropoff"),
     )
 
     id_ride = models.AutoField(primary_key=True)
@@ -27,9 +27,9 @@ class Ride(models.Model):
 
 class RideEvent(models.Model):
     id_event = models.AutoField(primary_key=True)
-    id_ride = models.ForeignKey(Ride, on_delete=models.CASCADE)
+    id_ride = models.ForeignKey(Ride, on_delete=models.CASCADE, related_name="events")
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Event {self.id_event} - Type: {self.event_type}"
+        return f"Event {self.id_event} - Ride: {self.id_ride}"

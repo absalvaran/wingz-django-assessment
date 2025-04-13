@@ -9,7 +9,7 @@ from users.tests.factories import UserFactory
 
 
 fake = Faker()
-STATUS = ["ENROUTE", "PICKUP", "DROPOFF"]
+STATUS = ["enroute", "pickup", "dropoff"]
 
 
 class RideFactory(DjangoModelFactory):
