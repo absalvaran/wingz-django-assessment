@@ -16,7 +16,7 @@ cp .env.example .env
 
 3. Run `python manage.py migrate` to apply database migrations
     - Run `python manage.py generate_users` to create test instances for users
-    - Run `python manage.py generate_rideds` to create test instances for rides and ride events
+    - Run `python manage.py generate_rides` to create test instances for rides and ride events
 4. Create an admin/superuser for API access by running `python manage.py createsuperuser` 
 5. Start the development server by executing `python manage.py runserver`
 
