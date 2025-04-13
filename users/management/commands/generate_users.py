@@ -1,10 +1,10 @@
-from django.db import transaction
 from django.core.management.base import BaseCommand
+from django.db import transaction
 
 from users.models import User
 from users.tests.factories import UserFactory
 
-NUM_USERS = 20
+NUM_USERS = 3
 
 
 class Command(BaseCommand):
