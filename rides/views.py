@@ -17,7 +17,7 @@ class RideView(viewsets.ModelViewSet):
     permission_classes = [IsAdmin]
     serializer_class = RideSerializer
     filterset_class = RideFilter
-    ordering_fields = ["pickup_time"]
+    ordering_fields = ["pickup_time", "distance_to_pickup"]
     ordering = ["pickup_time"]
 
     def get_queryset(self):
