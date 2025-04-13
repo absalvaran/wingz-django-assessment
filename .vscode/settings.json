@@ -2,7 +2,8 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
-    "source.fixAll.eslint": "always"
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always"
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
